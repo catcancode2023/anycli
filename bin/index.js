@@ -43,19 +43,7 @@ const anyInquirer = (filePath)=>{
           let run = answer['run'];
           if(run){
             const [cmd, ...opts] = run;
-            const exeout = spawn(cmd, opts);
-            exeout.stdout.on("data", data => {
-                console.log(`stdout: ${data}`);
-            });
-            
-            exeout.stderr.on("data", data => {
-                console.log(`stderr: ${data}`);
-            });
-            
-            exeout.on('error', (error) => {
-                console.log(`error: ${error.message}`);
-            });
-            
+            const exeout = spawn(cmd, opts, { stdio: 'inherit' }); 
             exeout.on("close", code => {
                 console.log(`child process exited with code ${code}`);
             });

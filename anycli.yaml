@@ -7,5 +7,5 @@
       value: ["ls"]
     - name: run git 
       short: "run git status"
-      value: ["git", "status"]
+      value: ["vi"]
 
