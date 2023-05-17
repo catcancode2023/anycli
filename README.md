@@ -11,7 +11,7 @@ npm install -g cat-anycli
 ```
 
 ## Usage
-To create a CLI using AnyCLI, you need to define a YAML configuration file. Let's say you have a file named `./anycli.yaml` with the following content:
+To create a CLI using `anycli`, you need to define a YAML configuration file. Let's say you have a file named `./anycli.yaml` with the following content:
 
 ```yaml
 - name: run
