@@ -1,0 +1,11 @@
+- name: run
+  type: list
+  message: run command
+  choices:
+    - name: show list
+      short: "run ls -l"
+      value: ["ls"]
+    - name: run git 
+      short: "run git status"
+      value: ["git", "status"]
+

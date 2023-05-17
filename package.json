@@ -1,0 +1,22 @@
+{
+  "name": "cat-anycli",
+  "version": "1.0.1",
+  "description": "make your own cli with simpel config yaml file",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "bin": {
+    "anycli": "./bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/catcancode2023/anycli.git"
+  },
+  "author": "catcancode2023@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^9.2.3",
+    "js-yaml": "^4.1.0"
+  }
+}
